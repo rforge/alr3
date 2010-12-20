@@ -6,7 +6,6 @@
   An artificial data set suggested by N. Mantel to illustrate stepwise
   regression methods.
 }
-\usage{head(mantel)}
 \format{
   A data frame with 5 observations on the following 4 variables.
   \describe{

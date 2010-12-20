@@ -6,7 +6,6 @@
 These data give length and age for over 3000 walleye (a type of fish) captured in Butternut
 Lake, Wisconsin, in three periods with different management method in place.
 }
-\usage{head(walleye)}
 \format{
   A data frame with 3198 observations on the following 3 variables.
   \describe{

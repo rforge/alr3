@@ -5,7 +5,6 @@
 \description{
  Catch per unit effort data for 16 Minnesota lakes
 }
-\usage{head(npdata)}
 \format{
   A data frame with 16 observations on the following 4 variables.
   \describe{

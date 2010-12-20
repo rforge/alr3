@@ -2,7 +2,6 @@
 \alias{UN2}
 \docType{data}
 \title{ National statistics from the United Nations }
-\usage{head(UN2)}
 \description{
 National health, welfare, and education statistics for 193
 places, mostly UN members, but also other areas like Hong Kong that are not

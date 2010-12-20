@@ -2,7 +2,6 @@
 \alias{UN1}
 \docType{data}
 \title{ National statistics from the United Nations }
-\usage{head(UN1)}
 \description{
 Demographic data for 193
 places, mostly UN members, but also other areas like Hong Kong that are not

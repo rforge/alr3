@@ -5,7 +5,6 @@
 \description{
 Oehlert (2000, Example 19.3) provides data from a small experiment on baking packaged cake mixes.
 }
-\usage{head(cakes)}
 \format{
   A data frame with 14 observations on the following 4 variables.
   \describe{

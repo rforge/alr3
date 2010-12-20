@@ -8,7 +8,6 @@ site, in Northern South Dakota.
 Data collected every six hours for all of 2002, except that all of the month
 of May and a few other observations are missing.
 }
-\usage{head(wm1)}
 \format{
   A data frame with 1116 observations on the following 3 variables.
   \describe{

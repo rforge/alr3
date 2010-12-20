@@ -9,7 +9,6 @@ in the Minneapolis metrodome can effect the distance travelled by a baseball.  T
 were collected in April 2003.  The experiment was repeated in May 2003 and domedata1 gives the
 combined data from the two experiments.
 }
-\usage{head(domedata1)}
 \format{
   A data frame with 96 observations on the following 7 variables.
   \describe{

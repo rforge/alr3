@@ -6,7 +6,6 @@
 Log catch per unit effect of 200 mm or longer black crappies was recored 27 times over the course
 of 1996 on Swan Lake, Minnesota.
 }
-\usage{head(swan96)}
 \format{
   A data frame with 27 observations on the following 2 variables.
   \describe{

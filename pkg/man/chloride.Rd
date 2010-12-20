@@ -5,7 +5,6 @@
 \description{
 Seasonal variation in chloride level in marshes close to a road or distant from the road, in Minnesota.
 }
-\usage{head(chloride)}
 \format{
   A data frame with 32 observations on the following 4 variables.
   \describe{

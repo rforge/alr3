@@ -5,7 +5,6 @@
 \description{
   World record times for the mile run, 1861--2003.
 }
-\usage{head(mile)}
 \format{
   A data frame with 46 observations:
   \describe{

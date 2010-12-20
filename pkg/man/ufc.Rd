@@ -13,7 +13,6 @@ The file \code{ufc} contains all the data.
 \code{ufcwc} contains only Western red cedar.
 \code{ufcgf} contains only grand fir.
 }
-\usage{head(ufcgf)}
 \format{
   A data frame with the following 5 variables.
   \describe{

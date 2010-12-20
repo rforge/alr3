@@ -5,7 +5,6 @@
 \description{
 County-by-county vote for president in Florida in 2000 for Bush, Gore and Buchanan.
 }
-\usage{head(florida)}
 \format{
   A data frame three vaiaables for each of Florida's 67 counties.
   \describe{

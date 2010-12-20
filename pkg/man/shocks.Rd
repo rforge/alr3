@@ -5,7 +5,6 @@
 \description{
 Results of a small experiment to learn about the effects of small electric shocks on dairy cows.
 }
-\usage{head(shocks)}
 \format{
   A data frame with 6 observations on the following 3 variables.
   \describe{

@@ -6,7 +6,6 @@
 For the windspeed data in the file \code{wm2}, this is the number of observations in each of the 
 bins, and the average windspeed in that bin
 }
-\usage{head(wm3)}
 \format{
   A data frame with 16 observations on the following 2 variables.
   \describe{
