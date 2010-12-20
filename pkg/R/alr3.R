@@ -1,38 +1,4 @@
-#  R version of the alr3 package
-
-# function to access web info, modelled after the "UsingR" function
-# in the UsingR library
-alrweb <-
-function (what = c("webpage", "errata", "primer")) 
-{
-    what = match.arg(what)
-    urls = c(webpage = "http://www.stat.umn.edu/alr/", 
-        errata = "http://www.stat.umn.edu/alr/Links/errata.pdf", 
-        primer = "http://www.stat.umn.edu/alr/Links/Rprimer.pdf")
-    url = urls[what]
-    browseURL(url)
-}
-alrprimer <- function() alrweb("primer")
-alrerrata <- function() alrweb("errata")
-
-#######################################################################
-# Chapter 2
-#######################################################################
-# method to return sigmaHat
-   
-sigmaHat <- function(object){UseMethod("sigmaHat")}
-sigmaHat.default <- function(object){summary(object)$sigma}
-sigmaHat.glm <- function(object){sqrt(summary(object)$dispersion)}
-### sd function for splus only; idential to R function
-
-
-#######################################################################
-# Chapter 4
-#######################################################################
-
-####  Case resampling bootstrap, based on work by Lexin Li
-####  Includes error handling  now in bootCase in 'car'
-
+#  R version of the alr3 package  -- a few functions not moved to car
 
 ###########################################################################
 # Chapter 5  pureErrorAnova
