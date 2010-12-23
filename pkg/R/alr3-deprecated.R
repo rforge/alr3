@@ -96,7 +96,7 @@ inf.index <- function (...) {
 }
 
 outlier.t.test <- function (...) {
-	.Deprecated("outlier.t.test", package="alr3")
+	.Deprecated("outlierTest", package="alr3")
 	car:::outlierTest(...)
 }
 

@@ -1,8 +1,5 @@
 ################ February 2010
-export(alrweb)
-export(alrprimer)
-export(alrerrata)
-export(sigmaHat)
+export(alrWeb)
 export(pureErrorAnova)
 export(randomLinComb)
 export(pod)
@@ -32,8 +29,6 @@ export(
 	outlier.t.test
 )
 
-S3method(sigmaHat, default)
-S3method(sigmaHat, glm)
 S3method(pureErrorAnova, lm)
 S3method(pod, lm)
 S3method(formula,pod)

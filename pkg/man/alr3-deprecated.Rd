@@ -75,7 +75,7 @@ outlier.t.test(...)
 }
 
 \details{
-\code{sigma.hat}, \code{random.lin.comb} \code{pure.error.anova} are now synonyms for 
+\code{random.lin.comb} \code{pure.error.anova} are now synonyms for 
 \code{sigmaHat}, \code{randomLinComb} and \code{pureErrorAnova}, all of
 which are still part of the alr3 package.
 
