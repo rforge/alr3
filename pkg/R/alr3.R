@@ -73,9 +73,10 @@ pod.lm <- function(x,group,mean.function,control,...) {
 
 pod.formula <-
 function (formula, data=sys.parent(), group, subset, weights=NULL, na.action, 
-    mean.function=c("pod","common","parallel","general"),
+    mean.function=c("pod", "common", "parallel", "general"),
     singular.ok = FALSE, contrasts = NULL, offset, control=nls.control(), ...) 
 { 
+    op <- options(warn=-1)  # suppress warnings
     mod <- match.arg(mean.function)
     call <- match.call(expand.dots=FALSE)
     call$... <- NULL
@@ -207,6 +208,7 @@ function (formula, data=sys.parent(), group, subset, weights=NULL, na.action,
    ans$group <- if (!is.null(subset)) g[rows] else g
    ans$call <- call
    class(ans)<-c("pod")
+   options(op) # warnings ok again
    ans
 }}
 
@@ -223,8 +225,8 @@ df.residual.pod <- function(object,...){
 predict.pod     <- function(object,...){ predict(object$nls.fit)}
 
 # Plot one dimensional models by group
-plot.pod.lm <- function(x, colors=rainbow(nlevels(x$group)),
-      pch=1:nlevels(x$group),key="topleft",identify=FALSE,
+plot.pod.lm <- function(x, colors=1:nlevels(x$group),
+      pch=1:nlevels(x$group),key="topleft", identify=FALSE,
       xlab="Linear Predictor", ylab=as.character(c(formula(x)[[2]])),...) {
   mean.function <- x$pod.mean.function
   if(mean.function == "general") stop("No 2D plot for the general pod model")
@@ -263,10 +265,10 @@ plot.pod.lm <- function(x, colors=rainbow(nlevels(x$group)),
       loc <- key
       legend(loc[1],loc[2], legend = as.character(levels(x$group)),
            lty=1:nlevels(x$group),col=colors[1:nlevels(x$group)],
-           pch=pch[1:nlevels(x$group)])}
+           inset=0.01, pch=pch[1:nlevels(x$group)])}
 # identify
   if(identify == TRUE){
-      identify(xp,x$model[,1],row.names(x$model))}
+      identify(xp, x$model[, 1], row.names(x$model))}
   invisible()}
 
 plot.pod<-function(x, colors=rainbow(nlevels(x$group)),
@@ -303,11 +305,11 @@ plot.pod<-function(x, colors=rainbow(nlevels(x$group)),
 
 anova.pod <- 
 function (object, scale = 0, test = "F", ...) 
-{
-    m1 <- update(object,mean.function="common")
-    m2 <- update(object,mean.function="parallel")
-    m4 <- update(object,mean.function="general")
-    objects <- list(m1,m2,object,m4)
+{   
+    m1 <- update(object, mean.function="common")
+    m2 <- update(object, mean.function="parallel")
+    m4 <- update(object, mean.function="general")
+    objects <- list(m1, m2, object, m4)
     resdf  <- as.numeric(lapply(objects, df.residual))
     resdev <- as.numeric(lapply(objects, deviance))
     table <- data.frame(resdf, resdev, c(NA, -diff(resdf)), c(NA, 
