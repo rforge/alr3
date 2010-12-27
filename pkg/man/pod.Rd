@@ -55,8 +55,8 @@ pod (x, ...)
   xlab="Linear Predictor", ylab=as.character(c(formula(x)[[2]])),
   ...)
  
-\method{plot}{pod.lm}(x, colors=rainbow(nlevels(x$group)),
-      pch=1:nlevels(x$group),key="topleft",identify=FALSE,
+\method{plot}{pod.lm}(x, colors=1:nlevels(x$group),
+      pch=1:nlevels(x$group), key="topleft", identify=FALSE,
       xlab="Linear Predictor", ylab=as.character(c(formula(x)[[2]])),
       ...) 
 }
