@@ -17,7 +17,7 @@ export(
 	inv.tran.estimate,
 	inverse.response.plot,
 	inv.res.plot,
-	bctrans,
+	bctrans, bctrans1,
 	lrt.bctrans,
 	resid.curv.test,
 	tukey.nonadd.test,
