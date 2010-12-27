@@ -55,6 +55,13 @@ bctrans <- function (...) {
 	car:::powerTransform(...)
 }
 
+bctrans1 <- function (...) {
+	.Deprecated("powerTransform", package="alr3", 
+	"'bctrans1' is deprecated.\nUse 'powerTransform' in the 'car'
+	package.  The arguements may have changed.")
+	car:::powerTransform(...)
+}
+
 lrt.bctrans <- function (...) {
 	.Deprecated("testTransform", package="alr3")
 	car:::testTransform(...)

@@ -11,6 +11,7 @@
 \alias{inverse.response.plot}
 \alias{inv.res.plot}
 \alias{bctrans}
+\alias{bctrans1}
 \alias{lrt.bctrans}
 \alias{resid.curv.test}
 \alias{tukey.nonadd.test}
@@ -20,6 +21,7 @@
 \alias{marginal.model.plots}
 \alias{inf.index}
 \alias{outlier.t.test}
+
 
 \title{Deprecated Functions in the alr3 Package}
 
@@ -50,6 +52,8 @@ inverse.response.plot(...)
 inv.res.plot(...)
 
 bctrans(...)
+
+bctrans1(...)
 
 lrt.bctrans(...)
 
