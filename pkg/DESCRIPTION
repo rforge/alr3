@@ -1,9 +1,9 @@
 Package: alr3
-Version: 2.0.2
-Date:  201/12/28
+Version: 2.0.3
+Date:  2011/03/21
 Title: Data to accompany Applied Linear Regression 3rd edition
-Author: Sanford Weisberg <sandy@stat.umn.edu>
-Maintainer: Sanford Weisberg <sandy@stat.umn.edu>
+Author: Sanford Weisberg <sandy@umn.edu>
+Maintainer: Sanford Weisberg <sandy@umn.edu>
 Depends:  R (>= 2.1.1), car
 LazyData: yes
 LazyLoad: no
