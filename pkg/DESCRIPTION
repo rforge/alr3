@@ -1,7 +1,7 @@
 Package: alr3
 Version: 2.0.6
 Date:  2017-11-24
-Title: Data to Accompany Applied Linear Regression 3rd edition
+Title: Data to Accompany Applied Linear Regression 3rd Edition
 Author: Sanford Weisberg <sandy@umn.edu>
 Maintainer: Sanford Weisberg <sandy@umn.edu>
 Depends:  R (>= 2.1.1)
@@ -13,6 +13,5 @@ Description: Data files used in the textbook S. Weisberg (2005),
  are tailored to the methods discussed in the book.  As of version 2.0.0,
  this package depends on the car package. Many functions formerly 
  in alr3 have been renamed and now reside in car.  
- Data files have beeen lightly modified to make some data columns row labels.
+ Data files have been lightly modified to make some data columns row labels.
 License: GPL (>= 2)
-URL: http://z.umn.edu/alr3ed
