@@ -1,9 +1,11 @@
-a################ February 2010
+################ February 2010
 export(alrWeb)
 export(pureErrorAnova)
 export(randomLinComb)
 export(pod)
 export(pod.formula)
+
+import("car")
 
 importFrom("graphics", "abline", "legend", "locator", "plot")
 importFrom("stats", "anova", "as.formula", "coef", "confint",

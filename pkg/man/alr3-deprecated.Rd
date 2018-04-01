@@ -89,5 +89,5 @@ All the remaining functions now shadow newer functions in
 the car package.  In several cases, the arguments to the function
 have changed as well, and so there is no guarantee that any
 of these will work as expected.  Please substitute the corresponding
-function from \code{\link{car}}.
+function from car.
 }
